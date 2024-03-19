@@ -67,9 +67,8 @@ console.log("homework");
 //   }
 //   console.log("count>>",count);
 // }
-
 // {
-//   For2. a va b butun sonlari berilgan (a < b). a va b sonlari orasidagi barcha butun sonlarni (a va b dan tashqari) kamayish tartibida chiqaruvchi va chiqarilgan sonlar sonini chiqaruvchi progma tuzilsin.
+//   //For2. a va b butun sonlari berilgan (a < b). a va b sonlari orasidagi barcha butun sonlarni (a va b dan tashqari) kamayish tartibida chiqaruvchi va chiqarilgan sonlar sonini chiqaruvchi progma tuzilsin.
 
 //   console.log("for-2");
 //   let numFirst = 15;
@@ -125,9 +124,9 @@ console.log("homework");
 // }
 // {
 //   console.log("for-7");
-//   //for -6 a va b butun sonlari berilgan (a < b). a dan b gacha bo'lgan barcha butun sonlar kvadratlarining yig'indisini chiqaruvchi programma tuzilsin.
+//   //for 7 a va b butun sonlari berilgan (a < b). a dan b gacha bo'lgan barcha butun sonlar kvadratlarining yig'indisini chiqaruvchi programma tuzilsin.
 //   let numFirst = 1;
-//   let numSecond = 3
+//   let numSecond = 4
 //   let sum =0
 //   for (let i = numFirst; i < numSecond+1; i++) {
 //         sum+=i**2
@@ -234,7 +233,7 @@ console.log("homework");
 //   //S = 1^1 + 2^2 + … + N^N
 
 //   console.log("for-16");
-//   let num = 3;
+//   let num = 4;
 //   let sum = 0;
 //   for (let i = 1; i < num + 1; i++) {
 //     sum += i ** i;
@@ -366,7 +365,6 @@ console.log("homework");
 //     mun *= 10;
 //     mun += Math.floor(num % 10);
 //     num = Math.floor(num / 10);
-
 //   }
 //   console.log(mun);
 // }
@@ -416,32 +414,24 @@ console.log("homework");
 //     }
 //   }
 // }
-// {
-//   console.log("while -9");
-//   //While9. Palindromik songa tekshirish dasturini yozing. True yoki False qaytarsin.
-//   //Palindromik son – boshidan va oxiridan o’qilish bir xil bo’lgan son, masalan 1345431, 45788754
-//   let num = 1345432; 
-
-//   let str = num.toString(); 
-//   let i = 0;
-//   let j = str.length - 1;
-//   let palindromik = true;
-
-//   while (i < j) {
-//     if (str[i] !== str[j]) {
-//       palindromik = false; 
-//       break; 
-//     }
-//     i++;
-//     j--;
-//   }
-
-//   if (palindromik) {
-//     console.log("True"); 
-//   } else {
-//     console.log("False"); 
-//   }
-// }
+{
+  console.log("while -9");
+  //While9. Palindromik songa tekshirish dasturini yozing. True yoki False qaytarsin.
+  //Palindromik son – boshidan va oxiridan o’qilish bir xil bo’lgan son, masalan 1345431, 45788754
+  let num = 232;
+  let mun = 0;
+  let palindromik = num
+  while (num >=1) {
+    mun *= 10;
+    mun += Math.floor(num % 10);
+    num = Math.floor(num / 10);
+  }
+  if (mun===palindromik){
+    console.log(true);
+  }else{
+    console.log(false);
+  }
+}
 // {
 //   console.log("while -10");
 //   //While10. n butun soni berilgan (n > 1). N sonini tub yoki tub emasligini aniqlovchi programma tuzilsin.
